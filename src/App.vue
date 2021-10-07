@@ -1,17 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Schedule />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Schedule from "./components/Schedule/Schedule.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Schedule,
+  },
+};
 </script>
 
 <style>
@@ -22,5 +21,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+p {
+  margin: 0;
 }
 </style>
